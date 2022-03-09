@@ -17,6 +17,32 @@ class TestCar(private val car: Car) {
     }
 }
 
+abstract class Test() {
+    lateinit var name: String
+    abstract fun getNameTest(): String
+
+    fun create() {
+        name = getNameTest()
+        println(name)
+    }
+
+    open fun testCreate() {
+        println("테스트 Create")
+    }
+}
+
+class Test2: Test() {
+    override fun getNameTest(): String = "유창원"
+
+    override fun testCreate() {
+        super.testCreate()
+        println("테스트2 Create")
+    }
+}
+
 fun main(array: Array<String>) {
 
+    val test = Test2()
+    test.create()
+    test.testCreate()
 }
