@@ -37,5 +37,5 @@ fun q9(a: Int, b: Int) {
 }
 
 fun main(array: Array<String>) {
-    q9(3, 8)
+    q9(1, 6)
 }
