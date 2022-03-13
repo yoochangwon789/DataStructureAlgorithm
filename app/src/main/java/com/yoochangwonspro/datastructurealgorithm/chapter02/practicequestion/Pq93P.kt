@@ -1,4 +1,4 @@
-package com.yoochangwonspro.datastructurealgorithm.chapter02
+package com.yoochangwonspro.datastructurealgorithm.chapter02.practicequestion
 
 import java.util.*
 
