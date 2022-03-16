@@ -2,6 +2,7 @@ package com.yoochangwonspro.datastructurealgorithm.chapter03
 
 import java.util.*
 
+// 선형 구조 보초법 알고리즘
 fun seqSearchSen(a: Array<Int>, num: Int, key: Int): Int {
     var i = 0
     a[num] = key
