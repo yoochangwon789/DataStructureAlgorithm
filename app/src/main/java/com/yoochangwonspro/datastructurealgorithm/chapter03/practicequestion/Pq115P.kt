@@ -34,7 +34,7 @@ fun swqSearchSenForResult() {
 }
 
 // 선형 검색 스캐닝 과정 상세 출력 알고리즘
-fun q2(x: Array<Int>, n: Int, key: Int): Int {
+fun q2(x: IntArray, n: Int, key: Int): Int {
     print("   |")
     for (i in 0 until n) print("  $i")
     println()
@@ -65,7 +65,7 @@ fun q2Result() {
     }
     print("찾는 값：") // 키 값을 입력 받음
     val ky = stdIn.nextInt()
-    val idx = Test.seqSearchEx(x, num, ky) // 배열 x에서 값이 ky인 요소를 검색
+    val idx = q2(x, num, ky) // 배열 x에서 값이 ky인 요소를 검색
     if (idx == -1) println("그 값의 요소가 없습니다.") else println(ky.toString() + "은 " + "x[" + idx + "]에 있습니다.")
 }
 
