@@ -2,6 +2,7 @@ package com.yoochangwonspro.datastructurealgorithm.chapter03
 
 import java.util.*
 
+// 이진 검색 알고리즘 구현
 fun binSearch(a: Array<Int>, num: Int, key: Int): Int {
     var pickFirst = 0
     var pickLast = num - 1
